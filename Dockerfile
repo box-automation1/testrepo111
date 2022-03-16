@@ -14,5 +14,5 @@ RUN virtualenv -p /usr/bin/python3 venv
 RUN pip install -U -r Ultroid/requirements.txt \ 
 #RUN pip install -U -r Ultroid/resources/startup/optional-requirements.txt
 
-COPY . ./
+COPY . .
 CMD ["bash","startup"]

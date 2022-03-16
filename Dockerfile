@@ -10,7 +10,7 @@ RUN apt-get update && \
 RUN git clone https://github.com/TeamUltroid/Ultroid.git
 RUN pip3 install virtualenv
 RUN virtualenv -p /usr/bin/python3 venv
-RUN pip3 install --no-cache-dir -r Ultroid/requirements.txt
+#RUN pip3 install --no-cache-dir -r Ultroid/requirements.txt
 RUN pip3 install -U -r Ultroid/requirements.txt \ 
 RUN pip3 install -U -r Ultroid/resources/startup/optional-requirements.txt
 

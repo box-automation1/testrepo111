@@ -14,5 +14,5 @@ RUN git clone https://github.com/TeamUltroid/Ultroid.git && cd Ultroid \
     pip3 install -U -r requirements.txt \ 
     pip3 install -U -r resources/startup/optional-requirements.txt
 
-
+COPY . ./
 CMD ["bash","startup"]
